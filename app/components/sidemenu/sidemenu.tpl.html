@@ -1,0 +1,24 @@
+<div id="sidebar-wrapper">
+    <md-button class="md-icon-button" aria-label="Side Panel" ng-click="toggleLeft()" ng-hide="isOpenLeft()" >
+        <md-tooltip>Side Panel</md-tooltip>
+        <md-icon class="md-default-theme" class="material-icons">&#xE5D2;</md-icon>
+    </md-button>
+        <ul class="sidebar">
+            <li class="sidebar-main">
+                <a ng-click="toggleSidebar()">
+                    Dashboard
+                    <i class="menu-icon material-icons">apps</i>
+                </a>
+            </li>
+            <li class="sidebar-list">
+                <a>New <span class="menu-icon material-icons">control_point</span></a>
+            </li>
+            <li class="sidebar-list">
+                <a>Templates <span class="menu-icon material-icons">widgets</span></a>
+            </li>
+            <li class="sidebar-list">
+                <a>Tables <span class="menu-icon fa fa-table"></span></a>
+            </li>
+        </ul>
+
+    </div>

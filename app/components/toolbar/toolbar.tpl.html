@@ -1,0 +1,31 @@
+<div layout="row">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <img src="../../images/logo.png" >
+            <input type="text" ng-model="color" placeholder="Search">
+            <!-- fill up the space between left and right area -->
+            <span flex></span>
+            <div layout="row">
+            <md-button ng-click="vm.toggleFullScreen()" aria-label="toggle fullscreen">
+                <i class="material-icons">fullscreen</i>
+            </md-button>
+                <md-button>
+                    <i class="material-icons">notifications</i>
+                </md-button>
+                <md-button>
+                    <i class="material-icons">settings</i>
+                </md-button>
+                <md-button>
+                    <i class="material-icons">help_outline</i>
+                </md-button>
+                <md-button class="md-primary dropdown" ng-click="myDropdownIsActive=!myDropdownIsActive" ng-class="{active:myDropdownIsActive}">
+                    <img class="user-img" src="{{auth.profile.picture}}" />
+                    <ul class="dropdown-menu md-whiteframe-z1">
+                        <li><md-button class="user-name">Welcome {{auth.profile.nickname}}</md-button></li>
+                        <li><md-button ng-click="logout()">Log out</md-button></li>
+                    </ul>
+                </md-button>
+            </div>
+        </div>
+    </md-toolbar>
+</div>

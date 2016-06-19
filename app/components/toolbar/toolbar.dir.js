@@ -1,0 +1,32 @@
+(function () {
+    'use strict';
+
+    angular
+        .module('myApp')
+        .directive('toolbar', toolbar);
+
+    function toolbar(){
+        return {
+            templateUrl: 'components/toolbar/toolbar.tpl.html',
+            controller: toolbarController,
+            controllerAs: 'toolbar'
+        };
+    }
+
+    function toolbarController( $scope, auth, $http, $location, store, $rootScope ){
+        $scope.auth = auth;
+        $scope.logout = function() {
+            auth.signout();
+            store.remove('profile');
+            store.remove('token');
+            $location.path('/components/login');
+        }
+        var vm = this;
+
+        vm.toggleFullScreen = toggleFullScreen;
+
+        function toggleFullScreen() {
+        }
+    }
+
+})();

@@ -1,0 +1,364 @@
+/* app css stylesheet */
+
+html, body{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+
+.login-page{
+    background-image: url("images/login-bg.png");
+    height: 100%;
+    background-size: cover;
+}
+
+.login-box{
+    width: 350px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    right: 46px;
+    /* left: 0; */
+    bottom: 0;
+    top: 40%;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    font-size: 32px;
+    text-decoration: none;
+}
+.login-box a{
+    color:orangered;
+    text-decoration: none;
+}
+
+#a0-lock.a0-theme-default .a0-overlay.a0-active {
+    background: -webkit-radial-gradient(rgba(64,64,75,.9),rgba(17,17,24,.9)) rgba(34,34,40,.52) !important;
+    background: -moz-radial-gradient(rgba(64,64,75,.9),rgba(17,17,24,.9)) rgba(34,34,40,.52);
+    background: radial-gradient(rgba(1, 255, 9, 0.9),rgba(255, 35, 0, 0.95)) rgba(34, 34, 40, 0) !important;
+}
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.8);
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
+    margin: 2px;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,255,255,0.4);
+}
+
+#page-wrapper {
+    padding-left: 40px;
+    height: 100%;
+}
+#page-wrapper.open #sidebar-wrapper {
+    left: 150px;
+}
+
+
+#page-wrapper, #sidebar-wrapper {
+    transition: all .4s ease 0s;
+}
+
+.layoutWrapper{
+}
+
+.mainContainer{
+    width:inherit;
+    height: inherit;
+}
+
+@media only screen and (min-width: 561px) {
+    #page-wrapper.open {
+        padding-left: 250px;
+    }
+}
+
+#sidebar-wrapper {
+    background: #2d2d2d;
+}
+
+#sidebar-wrapper {
+    margin-left: -150px;
+    left: -60px;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    z-index: 999;
+}
+
+ul.sidebar .sidebar-main a,
+.sidebar-footer,
+ul.sidebar .sidebar-list a:hover,
+#page-wrapper:not(.open) ul.sidebar .sidebar-title.separator {
+    /* Sidebar header and footer color */
+    background: #2d2d2d;
+}
+ul.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-indent: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+ul.sidebar li a {
+    color: #fff;
+    display: block;
+    float: left;
+    text-decoration: none;
+    width: 250px;
+}
+ul.sidebar .sidebar-main {
+    height: 36px;
+}
+ul.sidebar .sidebar-main a {
+    font-size: 18px;
+    line-height: 36px;
+}
+ul.sidebar .sidebar-main a:hover {
+    cursor: pointer;
+}
+ul.sidebar .sidebar-main .menu-icon {
+    float: right;
+    font-size: 26px;
+    padding-right: 8px;
+    line-height: 36px;
+}
+ul.sidebar .sidebar-title {
+    color: #738bc0;
+    font-size: 12px;
+    height: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+    transition: all .6s ease 0s;
+}
+ul.sidebar .sidebar-list {
+    height: 32px;
+}
+ul.sidebar .sidebar-list a {
+    text-indent: 25px;
+    font-size: 14px;
+    color: #b7b7b7;
+    line-height: 32px;
+    border-left: 3px solid transparent;
+    width: 247px;
+}
+ul.sidebar .sidebar-list a:hover {
+    color: #fff;
+    border-left: 3px solid #ff7200;
+    text-indent: 25px;
+}
+ul.sidebar .sidebar-list a:hover .menu-icon {
+    text-indent: 25px;
+}
+ul.sidebar .sidebar-list .menu-icon {
+    float: right;
+    font-size: 26px;
+    padding-right: 8px;
+    line-height: 32px;
+    color: white;
+}
+.sidebar-footer ul.sidebar {position: initial;}
+#page-wrapper:not(.open) ul.sidebar {
+    bottom: 0;
+}
+#page-wrapper:not(.open) ul.sidebar .sidebar-title {
+    display: none;
+    height: 0px;
+    text-indent: -100px;
+}
+#page-wrapper:not(.open) ul.sidebar .sidebar-title.separator {
+    display: block;
+    height: 2px;
+    margin: 13px 0;
+}
+#page-wrapper:not(.open) ul.sidebar .sidebar-list a:hover span {
+    border-left: 3px solid #e99d1a;
+    text-indent: 22px;
+}
+#page-wrapper:not(.open) .sidebar-footer {
+
+}
+.sidebar-footer {
+    position: absolute;
+    /* height: 40px; */
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transition: all .6s ease 0s;
+    text-align: center;
+}
+.sidebar-footer div a {
+    color: #b2bfdc;
+    font-size: 12px;
+    line-height: 43px;
+}
+.sidebar-footer div a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+toolbar .md-toolbar-tools .md-button{
+    min-width: 25px;
+    margin: 0px;
+    line-height: 10px;
+}
+md-toolbar, .md-toolbar-tools{
+    min-height:36px;
+    height:36px;
+    background-color: rgb(45, 45, 45) !important;
+}
+md-toolbar img {
+    margin:0 10px
+}
+md-toolbar .user-img{
+    width: 35px;
+    height: 31px;
+}
+md-toolbar .user-name{
+    background: grey;
+}
+md-toolbar .user-name:hover{
+    background: grey !important;
+}
+md-toolbar input {
+    font-size: 14px;
+    border: 0px;
+    padding: 5px;
+    min-width: 458px;
+    background-color: transparent;
+    border-bottom: 1px solid #9ba4a9;
+}
+
+.md-toolbar-tools {
+    padding:0 6px;
+}
+
+.mainMenu {
+    position: absolute;
+    left: 0;
+    width: 42px;
+    height: 100%;
+    background: #313131;
+    z-index: 9999;
+}
+.mainMenu:hover {
+    width: 220px;
+}
+
+.md-button.dropdown {
+    overflow: visible; /*reset*/
+}
+
+.dropdown .dropdown-menu {
+    max-width: 0;
+    position: absolute;
+    right: 40px;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: #fff;
+    list-style: none;
+    transition: min-width 0.2s ease-in-out, left 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.dropdown .dropdown-menu .md-button {
+    min-width: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 0px 16px;
+    text-align: left;
+    line-height: 9px;
+}
+.dropdown .dropdown-menu .md-button span{
+    color:black;
+    font-size: 12px;
+    text-transform: initial;
+}
+
+.dropdown.active .dropdown-menu {
+    max-width: 300px; /* set a maxwidth bigger than the widest element */
+    right: 0;
+    opacity: 1;
+}
+
+.widgetsWrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    float: left;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.widget{
+    width:350px;
+    height:100%;
+    background-color: red;
+    display: inline-block;
+    white-space: normal;
+}
+
+
+
+
+
+
