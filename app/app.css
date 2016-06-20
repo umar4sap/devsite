@@ -358,6 +358,25 @@ md-toolbar input {
     white-space: normal;
 }
 
+.widgetPane{
+    height:inherit;}
+
+.widgetPane md-toolbar{}
+
+.widgetPane md-toolbar .md-button{
+    width: auto;
+    min-width: auto;
+    margin: 0;
+    padding: 5px;
+    text-transform: lowercase;}
+
+.widgetPane md-content {
+    height: inherit;
+    background-color: #212121;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 
 
 
