@@ -178,6 +178,7 @@ ul.sidebar .sidebar-list .menu-icon {
     padding-right: 8px;
     line-height: 32px;
     color: white;
+    cursor:pointer;
 }
 .sidebar-footer ul.sidebar {position: initial;}
 #page-wrapper:not(.open) ul.sidebar {
