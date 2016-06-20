@@ -19,4 +19,15 @@
         };
     }
 
+    angular.module('myApp').directive("addwidget", function($compile){
+        return function(scope, element, attrs){
+            element.bind("click", function(){
+                    angular.element(document.getElementById('widgetsWrapper')).append($compile("<div><button class='btn btn-default' data-alert="+scope.count+">Show alert #"+scope.count+"</button></div>")(scope));
+            });
+        };
+        var vm =this;
+
+    });
+
+
 })();
