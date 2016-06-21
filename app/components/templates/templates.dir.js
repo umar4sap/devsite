@@ -13,10 +13,79 @@
             vm.parentTag = $element.parent()[0].remove();
         }
 
-        $http.get('components/templates/templates.json')
-            .then(function(res){
-                $scope.templatesList = res.data[0].templatesList;
-            });
+        var jsondata = [
+            {
+                "templatesList": [
+                    {
+                        "templateItem": {
+                            "href": "templatesdescription",
+                            "name": "Working Template"
+                        },
+
+                        "templateItemDescription": "Lorem Loreem Loreeem Ipsum Ipsuum Ipsuuum ..."
+                    },
+                    {
+                        "templateItem": {
+                            "href": "http://example.com/event1",
+                            "name": "Template 2"
+                        },
+
+                        "templateItemDescription": "Lorem Loreem Loreeem Ipsum Ipsuum Ipsuuum ..."
+                    },
+                    {
+                        "templateItem": {
+                            "href": "http://example.com/event1",
+                            "name": "Template 3"
+                        },
+
+                        "templateItemDescription": "Lorem Loreem Loreeem Ipsum Ipsuum Ipsuuum ..."
+                    },
+                    {
+                        "templateItem": {
+                            "href": "http://example.com/event1",
+                            "name": "Template 4"
+                        },
+
+                        "templateItemDescription": "Lorem Loreem Loreeem Ipsum Ipsuum Ipsuuum ..."
+                    },
+                    {
+                        "templateItem": {
+                            "href": "http://example.com/event1",
+                            "name": "Template 5"
+                        },
+
+                        "templateItemDescription": "Lorem Loreem Loreeem Ipsum Ipsuum Ipsuuum ..."
+                    },
+                    {
+                        "templateItem": {
+                            "href": "http://example.com/event1",
+                            "name": "Template 6"
+                        },
+
+                        "templateItemDescription": "Lorem Loreem Loreeem Ipsum Ipsuum Ipsuuum ..."
+                    },
+                    {
+                        "templateItem": {
+                            "href": "http://example.com/event1",
+                            "name": "Template 7"
+                        },
+
+                        "templateItemDescription": "Lorem Loreem Loreeem Ipsum Ipsuum Ipsuuum ..."
+                    },
+                    {
+                        "templateItem": {
+                            "href": "http://example.com/event1",
+                            "name": "Template 8"
+                        },
+
+                        "templateItemDescription": "Lorem Loreem Loreeem Ipsum Ipsuum Ipsuuum ..."
+                    }
+                ]
+            }
+        ];
+
+
+                $scope.templatesList = jsondata[0].templatesList;
 
     }
 
