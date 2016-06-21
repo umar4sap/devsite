@@ -13,6 +13,7 @@
             vm.parentTag = $element.parent()[0].remove();
         }
 
+<<<<<<< HEAD
         var jsondata = [
             {
                 "templatesList": [
@@ -86,6 +87,12 @@
 
 
                 $scope.templatesList = jsondata[0].templatesList;
+=======
+        $http.get('app/components/templates/templates.json')
+            .then(function(res){
+                $scope.templatesList = res.data[0].templatesList;
+            });
+>>>>>>> origin/master
 
     }
 
