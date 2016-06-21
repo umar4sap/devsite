@@ -357,11 +357,41 @@ md-toolbar input {
     display: inline-block;
     white-space: normal;
 }
+.widgetPane md-content md-list-item a{
+    width:100%;
+    cursor: pointer;
+}
+
+.widgetPane md-content md-list-item a:hover{
+    color: #929292;
+}
+
+
 
 .widgetPane{
-    height:inherit;}
+    height:100%;
+    overflow: hidden;
+    margin-right: 1px;
+    margin-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p{
 
+    font-size: 13px;
+
+    padding: 10px;
+}
 .widgetPane md-toolbar{}
+
+.widgetPane md-toolbar h4{
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    padding-left: 10px;
+}
 
 .widgetPane md-toolbar .md-button{
     width: auto;

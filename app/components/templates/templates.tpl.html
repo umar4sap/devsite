@@ -1,0 +1,25 @@
+<div class='widgetPane' flex='100' ng-controller="templates">
+    <md-toolbar layout='row' layout-align='space-between center'>
+        <h4>Templates</h4>
+        <div layout='row' layout-align='end center'>
+            <md-button>-</md-button>
+            <md-button>+</md-button>
+            <md-button ng-click="closePane($element)">x</md-button>
+        </div>
+    </md-toolbar>
+    <md-content layout="column">
+        <md-input-container>
+            <input type="text" ng-model="search" placeholder="Search..">
+        </md-input-container>
+        <md-list>
+            <md-list-item ng-repeat="template in templatesList | filter:search">
+                <a layout="row" layout-align="space-between center" ui-sref="{{template.templateItem.href}}">
+                    <span>{{template.templateItem.name}}</span>
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </a>
+            </md-list-item>
+
+
+        </md-list>
+    </md-content>
+</div>

@@ -19,7 +19,7 @@
             auth.signout();
             store.remove('profile');
             store.remove('token');
-            $location.path('/components/login');
+            $location.path('/');
         }
         var vm = this;
 

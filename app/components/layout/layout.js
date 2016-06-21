@@ -12,7 +12,8 @@ angular.module('myApp.layout', ['ngRoute'])
     .controller('View1Ctrl', [function() {
 
 
-    }]).directive('master',function () {
+    }])
+    .directive('master',function () {
     function link(scope, element, attrs) {
         scope.$watch(function(){
             scope.style = {
