@@ -27,7 +27,7 @@ config([
   ) {
     $mdIconProvider.fontSet('md', 'material-icons');
     $mdThemingProvider.theme('default').dark();
-      $locationProvider.html5Mode(false);
+
 
       $urlRouterProvider.otherwise("/");
 
