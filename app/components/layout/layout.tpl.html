@@ -1,19 +1,20 @@
-<div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+
+
+<div ui-view=""  id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
     <sidemenu></sidemenu>
     <div  id="content-wrapper" layout="column">
         <toolbar></toolbar>
         <md-content layout-fill layout="row" master>
-               <div ui-view="w1" flex="20" class="views">
+               <div ui-view="success.templatelist" flex="20" class="views"  >
                </div>
-               <div ui-view="w2" flex="20"class="views">
+               <div ui-view="success.templatelist.templatesdescription" flex="20" class="views">
 
                </div>
-               <div ui-view="w3" flex="30" class="views">
+            <div ui-view="success.templatelist.templatesjson" flex="20" class="views">
 
-               </div>
-               <div ui-view="w4"class="views">
+            </div>
 
-               </div>
-        </div>
+
         </md-content>
 </div>
+    </div>

@@ -13,7 +13,7 @@
         </md-input-container>
         <md-list>
             <md-list-item ng-repeat="template in templatesList | filter:search">
-                <a layout="row" layout-align="space-between center" ui-sref="{{template.templateItem.href}}">
+                <a layout="row" layout-align="space-between center" ui-sref="{{template.templateItem.root}}">
                     <span>{{template.templateItem.name}}</span>
                     <i class="material-icons">keyboard_arrow_right</i>
                 </a>

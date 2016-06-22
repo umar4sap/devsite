@@ -27,31 +27,53 @@ config([
   ) {
     $mdIconProvider.fontSet('md', 'material-icons');
     $mdThemingProvider.theme('default').dark();
+      $locationProvider.html5Mode(false);
 
-    $routeProvider.otherwise({redirectTo: '/components/login'});
+      $urlRouterProvider.otherwise("/");
 
-    $stateProvider
-        .state('templates', {
-          //url: '/templates',
+      $stateProvider
+          .state('login', {
+                  url: '/',
+                  templateUrl: 'components/login/login.tpl.html',
+                  controller: 'LoginCtrl'
+              })
+
+
+      $stateProvider
+          .state('success', {
+              url: '/success',
+              templateUrl: 'components/layout/layout.tpl.html',
+              controller: 'View1Ctrl'
+
+          })
+
+      $stateProvider
+        .state('success.templatelist', {
+          url: '/templatelist',
             views: {
-                "w1": {
+                "success.templatelist": {
                     templateUrl: 'components/templates/templates.tpl.html'
+
                 }
-            }
+            },
+            parent:'success'
+
         })
-        .state('templatesdescription', {
-            //url: '/templates',
+        .state('success.templatelist.templatesdescription', {
+            url: '/templatesdescription',
             views: {
-                "w1": {
+                "success.templatelist": {
                     templateUrl: 'components/templates/templates.tpl.html'
                 },
-                "w2": {
+                "success.templatelist.templatesdescription": {
                     templateUrl: 'components/templates/templates-desc.tpl.html'
                 },
-                "w3": {
+                "success.templatelist.templatesjson": {
                     templateUrl: 'components/templates/templates-json.tpl.html'
                 }
-            }
+
+            },
+            parent:'success'
         })
         .state('settings.profile', {
           url: '/profile',

@@ -19,7 +19,7 @@
                 "templatesList": [
                     {
                         "templateItem": {
-                            "href": "templatesdescription",
+                            "root": ".templatesdescription",
                             "name": "Working Template"
                         },
 
@@ -27,7 +27,7 @@
                     },
                     {
                         "templateItem": {
-                            "href": "http://example.com/event1",
+                            "root": "http://example.com/event1",
                             "name": "Template 2"
                         },
 
@@ -35,7 +35,7 @@
                     },
                     {
                         "templateItem": {
-                            "href": "http://example.com/event1",
+                            "root": "http://example.com/event1",
                             "name": "Template 3"
                         },
 
@@ -43,7 +43,7 @@
                     },
                     {
                         "templateItem": {
-                            "href": "http://example.com/event1",
+                            "root": "http://example.com/event1",
                             "name": "Template 4"
                         },
 
@@ -51,7 +51,7 @@
                     },
                     {
                         "templateItem": {
-                            "href": "http://example.com/event1",
+                            "root": "http://example.com/event1",
                             "name": "Template 5"
                         },
 
@@ -59,7 +59,7 @@
                     },
                     {
                         "templateItem": {
-                            "href": "http://example.com/event1",
+                            "root": "http://example.com/event1",
                             "name": "Template 6"
                         },
 
@@ -67,7 +67,7 @@
                     },
                     {
                         "templateItem": {
-                            "href": "http://example.com/event1",
+                            "root": "http://example.com/event1",
                             "name": "Template 7"
                         },
 
@@ -75,7 +75,7 @@
                     },
                     {
                         "templateItem": {
-                            "href": "http://example.com/event1",
+                            "root": "http://example.com/event1",
                             "name": "Template 8"
                         },
 

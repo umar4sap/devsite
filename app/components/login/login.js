@@ -8,10 +8,7 @@ angular.module('myApp.login', ['ngRoute','angular-storage', 'angular-jwt','auth0
     .config(['$routeProvider','authProvider', '$httpProvider', '$locationProvider',
         'jwtInterceptorProvider', function($routeProvider,authProvider, $httpProvider, $locationProvider,
                                         jwtInterceptorProvider) {
-        $routeProvider.when('/components/login', {
-            templateUrl: 'components/login/login.tpl.html',
-            controller: 'LoginCtrl'
-        });
+
             authProvider.init({
                 domain: 'veegamgithub.auth0.com',
                 clientID: 'M0Kfe0HEm0E4OlhJdl39OfHxOAQU1VJB'
